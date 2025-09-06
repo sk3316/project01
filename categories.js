@@ -1,7 +1,7 @@
 const blogPosts = [
   {
     title: "Understanding Machine Learning",
-    image: "https://source.unsplash.com/400x250/?machine-learning",
+    image: "https://media.licdn.com/dms/image/v2/D4D12AQFFVtcH2pPWvA/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1676957829971?e=2147483647&v=beta&t=7dLkYSRrtJml54uJdZfdTPNC4dwuMJTUfZDGWef566Y",
     category: "Machine Learning",
     author: "John Doe",
     date: "Sept 5, 2025",
@@ -9,7 +9,7 @@ const blogPosts = [
   },
   {
     title: "Deep Learning Explained",
-    image: "https://source.unsplash.com/400x250/?deep-learning",
+    image: "https://www.mouser.in/blog/Portals/11/Dongang_Machine%20Learning_Theme%20Image-min_1.jpg",
     category: "Deep Learning",
     author: "Jane Smith",
     date: "Aug 22, 2025",
@@ -17,7 +17,7 @@ const blogPosts = [
   },
   {
     title: "AI in Robotics: A New Era",
-    image: "https://source.unsplash.com/400x250/?robotics,ai",
+    image: "https://kanerika.com/wp-content/uploads/2024/08/ai-in-robotics-1.png.webp",
     category: "Robotics",
     author: "Alan Turing",
     date: "July 30, 2025",
@@ -25,7 +25,7 @@ const blogPosts = [
   },
   {
     title: "NLP: Teaching Machines Language",
-    image: "https://source.unsplash.com/400x250/?nlp,language",
+    image: "https://ik.imagekit.io/edtechdigit/usaii/content/images/how-natural-language-processing-is-powering-artificial-intelligence.jpg",
     category: "NLP",
     author: "Ada Lovelace",
     date: "Sept 2, 2025",
@@ -33,7 +33,7 @@ const blogPosts = [
   },
   {
     title: "AI Ethics: What You Need to Know",
-    image: "https://source.unsplash.com/400x250/?ai,ethics",
+    image: "https://www.logicgate.com/wp-content/smush-webp/ensuring-ethical-and-responsible-ai-tools-and-tips-for-establishing-ai-governance-scaled-1.jpeg.webp",
     category: "AI Ethics",
     author: "Grace Hopper",
     date: "Aug 15, 2025",
@@ -41,7 +41,7 @@ const blogPosts = [
   },
   {
     title: "Reinforcement Learning Basics",
-    image: "https://source.unsplash.com/400x250/?reinforcement-learning",
+    image: "https://www.primotech.com/wp-content/uploads/2024/09/Reinforcement-Learning-In-AI-4.png",
     category: "Machine Learning",
     author: "Richard Sutton",
     date: "Sept 10, 2025",
@@ -49,7 +49,7 @@ const blogPosts = [
   },
   {
     title: "Convolutional Neural Networks",
-    image: "https://source.unsplash.com/400x250/?cnn,deep-learning",
+    image: "https://www.knowledgenile.com/wp-content/uploads/2025/02/Convolutional-Neural-Networks.jpg.webp",
     category: "Deep Learning",
     author: "Geoffrey Hinton",
     date: "Aug 28, 2025",
@@ -57,7 +57,7 @@ const blogPosts = [
   },
   {
     title: "Robotics and Automation in Industry",
-    image: "https://source.unsplash.com/400x250/?industrial-robotics",
+    image: "https://res.cloudinary.com/jerrick/image/upload/d_642250b563292b35f27461a7.png,f_jpg,fl_progressive,q_auto,w_1024/679a11fce0582c001c02c1eb.jpg",
     category: "Robotics",
     author: "Elon Musk",
     date: "Sept 1, 2025",
