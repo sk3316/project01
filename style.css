@@ -70,9 +70,10 @@ marquee {
     justify-content: center;
 }
 .hero-section{
-    width: 50%;
+    width: 90%;
     height: 40px;
     background-color: aliceblue;
+    margin-bottom: 10px;
 }
 .hero-section h2 {
     text-align: center;
