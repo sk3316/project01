@@ -59,7 +59,7 @@ marquee {
 }
 /*Hero container*/
 .hero-banner {
-    background-image: url("./images/hero-section1.png");
+    background-image: url("./images/hero-section.png");
     background-size: cover;
     background-repeat: no-repeat;    
     background-position: center;
