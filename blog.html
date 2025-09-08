@@ -41,20 +41,18 @@
             flex-wrap: nowrap;
         }
 
-        .logo {
-            background-image: url("./assets/Image.jpg");
-            height: 50px;
-            width: 150px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-
-        .nav-logo {
-            height: 55px;
-            width: 150px;
-            position: left;
-        }
+       .logo {
+    background-image:url("./images/ai\ logo.png");
+    height: 50px;
+    width: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.nav-logo {
+    height: 55px;
+    width: 150px;
+    position: left;}
 
         .nav-links {
             color: white;
@@ -122,8 +120,8 @@
             display: flex;
             align-items: center;
             justify-content: space-evenly;
-            border-top-left-radius: 30px;
-            border-top-right-radius: 30px;
+            /* border-top-left-radius: 30px;
+            border-top-right-radius: 30px; */
         }
 
         .footer-box a {
@@ -500,7 +498,7 @@
                 <label for="tags">Tags (comma separated)</label>
                 <input type="text" id="tags" name="tags" placeholder="e.g. tech, javascript, web" />
 
-                <button type="submit" onclick="alert('submitted!')">Submit Blog</button>
+                <button type="submit">Submit Blog</button>
             </form>
 
         </div>
@@ -520,17 +518,19 @@
                 <i class="fa-brands fa-facebook"></i> <a href="#">Facebook</a><br>
             </div>
             <div class="footer-col">
-                <h5>Qucik Navigation</h5>
-                <a href="#">Home</a><br>
-                <a href="#">Blogs</a><br>
-                <a href="#">Categories</a><br>
-                <a href="#">About Us</a><br>
+                <h5>Quick Navigation</h5>
+                <a href="index.html">Home</a><br>
+                <a href="blog.html">Blogs</a><br>
+                <a href="categories.html">Categories</a><br>
+                <a href="about.html">About Us</a><br>
             </div>
             <div class="footer-col">
                 <h5>Contact-info:</h5>
-                <p><i class="fa-solid fa-phone"></i> +91 1234567899</p>
-                <p><i class="fa-solid fa-envelope"></i> recipeint@example.com</p>
-                <p><i class="fa-solid fa-location-dot"></i>San Francisco</p>
+                <p><i class="fa-solid fa-phone"></i><a href="tel:+91 7888060628">Call Us: +91 7888060628</a></p>
+                <p><i class="fa-solid fa-envelope"></i><a href="mailto:spriyadarshi.ext@deloitte.com">
+                        spriyadarshi.ext@deloitte.com</a>
+                </p>
+                <address><i class="fa-solid fa-location-dot"></i>Bangalore</address>
             </div>
         </div>
 
@@ -623,46 +623,46 @@
                 const postEl = document.createElement('div');
                 postEl.classList.add('post-card');
 
-               postEl.innerHTML = `
+                postEl.innerHTML = `
         <img src="${post.image}" alt="${post.title}">
         <h3>${post.title}</h3>
         <div class="post-meta">By ${post.author} | ${post.date}</div>
         <p class="post-desc">${post.description}</p>
-        <a href="${post.link}" target="_blank" class="post-link">read more...</a>
+        <a href="${post.link}" target="_self" class="post-link">read more...</a>
       `;
 
-        container.appendChild(postEl);
-      });
+                container.appendChild(postEl);
+            });
 
-      currentIndex += postsPerPage;
+            currentIndex += postsPerPage;
 
-      // Show or hide the See More button
-      seeMoreBtn.style.display = currentIndex >= filteredPosts.length ? 'none' : 'block';
-    }
+            // Show or hide the See More button
+            seeMoreBtn.style.display = currentIndex >= filteredPosts.length ? 'none' : 'block';
+        }
 
-    // Filter and render on search
-    searchInput.addEventListener('input', () => {
-      const query = searchInput.value.toLowerCase();
+        // Filter and render on search
+        searchInput.addEventListener('input', () => {
+            const query = searchInput.value.toLowerCase();
 
-      filteredPosts = posts.filter(post =>
-        post.title.toLowerCase().includes(query) ||
-        post.author.toLowerCase().includes(query) ||
-        post.description.toLowerCase().includes(query)
-      );
+            filteredPosts = posts.filter(post =>
+                post.title.toLowerCase().includes(query) ||
+                post.author.toLowerCase().includes(query) ||
+                post.description.toLowerCase().includes(query)
+            );
 
-      clearPosts();
-      renderPosts();
-    });
+            clearPosts();
+            renderPosts();
+        });
 
-    // Initial render
-    renderPosts();
+        // Initial render
+        renderPosts();
 
-    // See More functionality
-    seeMoreBtn.addEventListener('click', () => {
-      renderPosts();
-    });
+        // See More functionality
+        seeMoreBtn.addEventListener('click', () => {
+            renderPosts();
+        });
 
-  </script>
+    </script>
 
 
 </body>
