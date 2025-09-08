@@ -59,7 +59,7 @@ marquee {
 }
 /*Hero container*/
 .hero-banner {
-    background-image: url("./images/hero_banner.jpg");
+    background-image: url("./images/hero-section1.png");
     background-size: cover;
     background-repeat: no-repeat;    
     background-position: center;
@@ -69,26 +69,12 @@ marquee {
     align-items: flex-end;
     justify-content: center;
 }
-.hero-section{
-    width: 90%;
-    height: 40px;
-    background-color: aliceblue;
-    margin-bottom: 10px;
-}
-.hero-section h2 {
-    text-align: center;
-}
-.hero-section span {
-    color: #9333ea;
-}
 .hero-image {
     margin-top: 0;
     height: 450px;
     width: 100%;
     
 }
-
-
 /*news letter container */
 .newsbox {
     width: 100%;
