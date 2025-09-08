@@ -59,11 +59,7 @@ marquee {
 }
 /*Hero container*/
 .hero-banner {
-<<<<<<< HEAD
-    background-image: url("./images/hero_banner.jpg");
-=======
     background-image: url("./images/hero-section1.png");
->>>>>>> origin/jatin
     background-size: cover;
     background-repeat: no-repeat;    
     background-position: center;
@@ -73,7 +69,6 @@ marquee {
     align-items: flex-end;
     justify-content: center;
 }
-<<<<<<< HEAD
 .hero-section{
     width: 50%;
     height: 40px;
@@ -85,19 +80,13 @@ marquee {
 .hero-section span {
     color: #9333ea;
 }
-=======
->>>>>>> origin/jatin
 .hero-image {
     margin-top: 0;
     height: 450px;
     width: 100%;
     
 }
-<<<<<<< HEAD
 
-
-=======
->>>>>>> origin/jatin
 /*news letter container */
 .newsbox {
     width: 100%;
