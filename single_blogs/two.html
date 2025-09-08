@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI BLOG WEBSITE || AI NEWS || project </title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="https://static.vecteezy.com/system/resources/previews/040/981/147/original/web-browser-with-ai-artificial-intelligence-icon-vector.jpg"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        border: border-box;
+      }
+      /* MARQUEE CSS */
+      .marquee_container {
+        width: 100%;
+        height: 30px;
+        background-color: #000;
+        display: flex;
+        align-items: center;
+      }
+      marquee {
+        color: white;
+      }
+      /* NAVBAR CSS STARTS */
+      .navbar {
+        margin-top: 2px;
+        height: 60px;
+        width: 100%;
+        background-color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+      }
+      .logo {
+        background-image: url("./images/ai\ logo.png");
+        height: 50px;
+        width: 150px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .nav-logo {
+        height: 55px;
+        width: 150px;
+        position: left;
+      }
+      .nav-links {
+        color: white;
+        height: 55px;
+        width: 40%;
+        gap: 20px;
+        text-align: center;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+        position: static;
+        right: 0;
+        padding: 10px;
+        overflow-x: auto;
+      }
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+      }
+      /* Blog Content Section */
+      .blog-container {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 0 20px;
+        font-family: Arial, sans-serif;
+        color: #111827;
+      }
+      .blog-title {
+        font-size: 2.8rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #000;
+      }
+      .blog-meta {
+        font-size: 0.9rem;
+        color: #555;
+        margin-bottom: 20px;
+      }
+      .featured-image {
+        width: 100%;
+        max-height: 400px;
+        object-fit: cover;
+        margin-bottom: 25px;
+        border-radius: 8px;
+      }
+      .blog-content {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: #222;
+        margin-bottom: 50px;
+      }
+      /* Comment Section */
+      .comment-section {
+        max-width: 900px;
+        margin: 0 auto 80px auto;
+        padding: 0 20px;
+      }
+      .comment-section h3 {
+        margin-bottom: 20px;
+        color: #000;
+      }
+      .comment-form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      .comment-form label {
+        font-weight: 600;
+        margin-bottom: 5px;
+        color: #000;
+      }
+      .comment-form input,
+      .comment-form textarea {
+        padding: 10px;
+        font-size: 1rem;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        resize: vertical;
+      }
+      .comment-form button {
+        width: 150px;
+        padding: 10px;
+        font-size: 1rem;
+        background-color: #000;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .comment-form button:hover {
+        background-color: #222;
+      }
+      /*footer section*/
+      .footer-box {
+        color: white;
+        height: 200px;
+        background-color: #000;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .footer-box a {
+        text-decoration: none;
+        color: white;
+      }
+      .footer-col {
+        height: 150px;
+        width: 30%;
+        text-align: center;
+      }
+      .copyright-section {
+        width: 100%;
+        background-color: #000;
+        color: white;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+      .copyright-section p {
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="marquee_container">
+        <marquee behavior="scroll" direction="left"
+          >Breaking : UK AI sector growth hits record £2.9B investment || Switzerland
+          releases 100% open AI model</marquee
+        >
+      </div>
+      <div class="navbar">
+        <div class="nav-logo">
+          <div class="logo"></div>
+        </div>
+        <div class="nav-links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Categories</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Blog Content Section -->
+    <main>
+      <div class="blog-container">
+        <h1 class="blog-title">Ethics in Artificial Intelligence</h1>
+        <p class="blog-meta">
+          By <strong>Jatin Mava </strong> | Published on <time datetime="2025-09-08">September 8, 2025</time>
+        </p>
+
+            
+        <img
+          src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80"
+          alt="AI Technology"
+          class="featured-image"
+        />
+
+        <article class="blog-content">
+          <p>
+            As artificial intelligence (AI) continues to advance rapidly, ethical considerations have become increasingly critical. Ethics in AI refers to the principles and guidelines that govern the development, deployment, and impact of AI technologies to ensure they are safe, fair, and beneficial to society.
+          </p>
+          <p>One major ethical concern is bias and fairness. AI systems learn from vast datasets that often contain historical biases related to race, gender, or socioeconomic status. Without careful design and oversight, AI can perpetuate or even amplify these biases, leading to unfair treatment or discrimination. Ethical AI development requires continuous evaluation and mitigation of such biases to promote equality.
+
+Transparency and explainability are also fundamental. AI models, especially complex ones like deep neural networks, can operate as "black boxes," making decisions that are difficult to understand or interpret. Ensuring transparency helps users trust AI systems and provides accountability, especially in critical fields like healthcare, law enforcement, and finance.</p>
+          <p>
+           Privacy is another critical ethical issue. AI systems often rely on collecting and analyzing large amounts of personal data. Protecting this data and respecting user consent is essential to maintain individual privacy rights and prevent misuse or unauthorized surveillance.
+
+Additionally, the potential impact of AI on employment and society raises ethical questions about job displacement and economic inequality. While AI can automate routine tasks and improve productivity, it also poses challenges for workforce transition and social safety nets.
+
+Finally, ethical AI calls for clear guidelines and governance frameworks involving governments, industries, and communities to ensure that AI technologies are developed responsibly and aligned with human values.
+
+In conclusion, ethics in AI is about balancing innovation with responsibility. As AI shapes the future, embedding ethical principles will be key to creating technologies that empower people and foster a fair, inclusive society.</p>
+        </article>
+      </div>
+
+      <!-- Comment Section -->
+      <section class="comment-section">
+        <h3>Leave a Comment</h3>
+        <form
+          class="comment-form"
+          action="#"
+          method="POST"
+          onsubmit="return validateCommentForm()"
+          novalidate
+        >
+          <label for="name">Name *</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+            minlength="2"
+            maxlength="50"
+          />
+
+          <label for="email">Email *</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+
+          <label for="message">Message *</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+            required
+            minlength="10"
+            maxlength="1000"
+          ></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <!-- <div class="newsbox">
+            <div class="news">
+                <center><h2>Stay Ahead of AI Trends</h2></center><br>
+                <center><h5>Get weekly insights delivered to your inbox</h5></center><br>
+                <form action="#" method="POST">
+                <input id="mail" name="mail" type="email" placeholder="Enter your Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div> -->
+      <div class="footer-box">
+        <div class="footer-col">
+          <h5>Social media links</h5>
+          <i class="fa-brands fa-square-instagram"></i> <a href="#">Instagram</a
+          ><br />
+          <i class="fa-brands fa-linkedin"></i> <a href="#">LinkedIn</a><br />
+          <i class="fa-brands fa-twitter"></i> <a href="#">Twitter</a><br />
+          <i class="fa-brands fa-facebook"></i> <a href="#">Facebook</a><br />
+        </div>
+        <div class="footer-col">
+          <h5>Qucik Navigation</h5>
+          <a href="#">Home</a><br />
+          <a href="#">Blogs</a><br />
+          <a href="#">Categories</a><br />
+          <a href="#">About Us</a><br />
+        </div>
+        <div class="footer-col">
+          <h5>Contact-info:</h5>
+          <p><i class="fa-solid fa-phone"></i> +91 1234567899</p>
+          <p><i class="fa-solid fa-envelope"></i> recipeint@example.com</p>
+          <p><i class="fa-solid fa-location-dot"></i>San Francisco</p>
+        </div>
+      </div>
+
+      <div class="copyright-section">
+        <center><p>&copy; 2025. AI BLOG WEBSITE. All Rights Reserved.</p></center>
+      </div>
+    </footer>
+
+    <script>
+      function validateCommentForm() {
+        const name = document.getElementById("name");
+        const email = document.getElementById("email");
+        const message = document.getElementById("message");
+
+        if (name.value.trim().length < 2) {
+          alert("Please enter a valid name (at least 2 characters).");
+          name.focus();
+          return false;
+        }
+        if (
+          !/^[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/.test(
+            email.value.trim().toLowerCase()
+          )
+        ) {
+          alert("Please enter a valid email address.");
+          email.focus();
+          return false;
+        }
+        if (message.value.trim().length < 10) {
+          alert("Message must be at least 10 characters long.");
+          message.focus();
+          return false;
+        }
+        return true;
+      }
+    </script>
+  </body>
+</html>
