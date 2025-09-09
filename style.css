@@ -109,13 +109,13 @@ marquee {
     font-size: 20px;
     border-radius: 4px;
     height: 40px;
-    width: 60%;
+    width: 30%;
     text-align: center;
 }
 .news button {
     font-size: 20px;
     height: 40px;
-    width: 200px;
+    width: 150px;
     background-color: white;
     border-radius: 4px;
 }
@@ -135,8 +135,8 @@ marquee {
 }
 .footer-col {
     height:150px;
-    width: 30%;
-    text-align: center;
+    width: 15%;
+    text-align: left;
 }
 .copyright-section {
     width: 100%;
@@ -172,7 +172,7 @@ marquee {
  
   /* Hero image: fit image inside container */
   .hero-banner {
-    height: 250px;              /* Reduce height for mobile */
+    height: 150px;              /* Reduce height for mobile */
     object-fit: contain;        /* Show full image with whitespace if needed */
     background-color: #000;     /* Optional: background to show behind transparent parts */
   }

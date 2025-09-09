@@ -95,9 +95,31 @@
       color: #f9f9f9;
     }
 
+    .btn-news{
+      display: inline-block;
+      padding: 8px 12px;
+      margin-top: 12px;
+      background: #28a745;
+      color: #fff;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      transition: background 0.3s;
+      max-width: 100px;
+      /* align-items: right; */
+      /* float: right; */
+      
+    }
+
+    .btn-news:hover {
+      background: #218838;
+      color: #f9f9f9;
+    }
+
     /* Latest News Section */
     .news-section {
-      padding: 20px;
+      /* padding: 20px; */
+      padding-left: 100px;
+      padding-right: 100px;
     }
 
     .news-item {
@@ -107,7 +129,7 @@
       margin-bottom: 15px;
       border-radius: 10px;
       overflow: hidden;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
     }
 
     .news-item img {
@@ -262,7 +284,7 @@
             <h4>${news.title}</h4>
             <p>${news.description}</p>
           </div>
-          <a href="${news.link}" class="btn">Read More</a>
+          <a href="${news.link}" class="btn-news">Read More</a>
         </div>
       `;
 
@@ -289,21 +311,21 @@
     </div>
     <div class="footer-box">
       <div class="footer-col">
-        <h5>Social media links</h5>
+        <h5>Social Media Links</h5>
         <i class="fa-brands fa-square-instagram"></i> <a href="#">Instagram</a><br>
         <i class="fa-brands fa-linkedin"></i> <a href="#">LinkedIn</a><br>
         <i class="fa-brands fa-twitter"></i> <a href="#">Twitter</a><br>
         <i class="fa-brands fa-facebook"></i> <a href="#">Facebook</a><br>
       </div>
-      <div class="footer-col">
+      <div class="footer-col" >
         <h5>Quick Navigation</h5>
-        <a href="index.html">Home</a><br>
-        <a href="blog.html">Blogs</a><br>
-        <a href="categories.html">Categories</a><br>
-        <a href="about.html">About Us</a><br>
+        <a href="index.html" style="text-align: center;">Home</a><br>
+        <a href="blog.html" style="text-align: center;">Blogs</a><br>
+        <a href="categories.html" style="text-align: center;">Categories</a><br>
+        <a href="about.html" style="text-align: center;">About Us</a><br>
       </div>
       <div class="footer-col">
-        <h5>Contact-info:</h5>
+        <h5>Contact-Info:</h5>
         <p><i class="fa-solid fa-phone"></i><a href="tel:+91 9906477865">Call Us: +91 9906477865</a></p>
         <p><i class="fa-solid fa-envelope"></i><a href="mailto:jatimawa.ext@deloitte.com"> jatimawa.ext@deloitte.com</a>
         </p>
