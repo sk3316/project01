@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI BLOG WEBSITE || AI NEWS || About</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/previews/040/981/147/original/web-browser-with-ai-artificial-intelligence-icon-vector.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        .about-wrapper {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .about-wrapper h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #111;
+            text-align: center;
+        }
+        .about-wrapper p {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: #333;
+            margin-bottom: 14px;
+        }
+        .about-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+            padding: 24px;
+            border: 1px solid rgba(99,102,241,0.15);
+        }
+        .about-row {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            margin-top: 20px;
+        }
+        .about-left, .about-right {
+            flex: 1;
+        }
+        .about-col-card {
+            background: #f5f6ff;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+            padding: 18px;
+            border: 1px solid rgba(99,102,241,0.20);
+            transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+            overflow: hidden;
+        }
+        .about-col-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 18px 36px rgba(0,0,0,0.14);
+            background-color: #ffffff;
+            border-color: rgba(99,102,241,0.35);
+        }
+        .about-left img {
+            width: 100%;
+            height: auto;
+            max-height: 680px;
+            border-radius: 10px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.35s ease;
+        }
+        .about-left:hover img {
+            transform: scale(1.03);
+        }
+        .about-right h3 {
+            margin-top: 6px;
+            margin-bottom: 10px;
+            color: #4338ca;
+        }
+        .about-right p {
+            color: #374151;
+        }
+        @media (max-width: 768px) {
+            .about-row {
+                flex-direction: column;
+            }
+        }
+    </style>
+    </head>
+<body>
+    <header>
+        <div class="marquee_container">
+            <marquee behavior="scroll" direction="left">Breaking : UK AI sector growth hits record Â£2.9B investment || Switzerland releases 100% open AI model</marquee>
+        </div>
+        <div class="navbar">
+            <div class="nav-logo">
+                <div class="logo"></div>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="blog.html">Blog</a>
+                <a href="categories.html">Categories</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </header>
+ 
+    <main>
+        <section class="about-wrapper">
+            <div class="about-card">
+                <h1>About AI Blog</h1>
+                <div class="about-row">
+                    <div class="about-left about-col-card">
+                        <img src="./assets/shared image.jpg" alt="AI concept vertical illustration">
+                    </div>
+                    <div class="about-right about-col-card">
+                        <p>Welcome to AI Blog â€” your hub for the latest insights, tutorials, and news in artificial intelligence, machine learning, and data-driven innovation. Our goal is to keep you informed with content that is practical, up-to-date, and easy to follow.</p>
+                        <p>We believe AI should be accessible to everyone. From beginners exploring the basics to professionals keeping pace with breakthroughs, our articles, guides, and curated resources are designed to help you learn and build.</p>
+                        <h3>About the Author</h3>
+                        <p>Hi, Iâ€™m the curator behind AI Blog â€” an AI enthusiast who enjoys breaking down complex concepts into clear, actionable knowledge. When Iâ€™m not writing, Iâ€™m experimenting with new models and tools.</p>
+                        <p>Have feedback or want to collaborate? Head over to our <a href="contact.html">Contact</a> page â€” weâ€™d love to hear from you.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+ 
+    <footer>
+            <div class="footer-box">
+                <div class="footer-col">
+                <h5>Social media links</h5>
+                <i class="fa-brands fa-square-instagram"></i> <a href="#">Instagram</a><br>
+                <i class="fa-brands fa-linkedin"></i> <a href="#">LinkedIn</a><br>
+                <i class="fa-brands fa-twitter"></i> <a href="#">Twitter</a><br>
+                <i class="fa-brands fa-facebook"></i> <a href="#">Facebook</a><br>
+            </div>
+            <div class="footer-col">
+                <h5>Quick Navigation</h5>
+                <a href="index.html">Home</a><br>
+                <a href="blog.html">Blogs</a><br>
+                <a href="categories.html">Categories</a><br>
+                <a href="about.html">About Us</a><br>
+            </div>
+            <div class="footer-col">
+                <h5>Contact-info:</h5>
+                <p><i class="fa-solid fa-phone"></i> +91 1234567899</p>
+                <p><i class="fa-solid fa-envelope"></i> recipient@example.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> San Francisco</p>
+            </div>
+            </div>
+ 
+            <div class="copyright-section">
+                <center><p>&copy; 2025. AI BLOG WEBSITE. All Rights Reserved.</p></center>
+            </div>
+    </footer>
+</body>
+</html>
