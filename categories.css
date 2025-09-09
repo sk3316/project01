@@ -17,7 +17,7 @@ section.card h1 {
   margin-bottom: 30px;
 }
 .category-btn {
-  background-color: #222;
+  background-color: #28a745;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -26,8 +26,8 @@ section.card h1 {
   font-weight: 500;
 }
 .category-btn:hover {
-  background-color: #66ccff;
-  color: #000;
+  background-color: #218838;
+  color: white;
 }
 
 #blog-container {

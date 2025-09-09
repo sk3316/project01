@@ -148,3 +148,32 @@ marquee {
 .copyright-section p {
     margin-bottom: 0;
 }
+
+/* 🔁 Responsive styles for screens ≤ 768px */
+ 
+@media (max-width: 768px) {
+  /* Navbar: stack elements and align nav links to the left */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+ 
+  .nav-links {
+    flex-direction:row;
+    width: 50%;
+    padding-top: 10px;
+  }
+ 
+  .nav-links a {
+    margin-left: 0;       /* Remove left margin */
+    text-align: left;     /* Align text left */
+    width: 50%;          /* Make links full width if needed */
+  }
+ 
+  /* Hero image: fit image inside container */
+  .hero-banner {
+    height: 250px;              /* Reduce height for mobile */
+    object-fit: contain;        /* Show full image with whitespace if needed */
+    background-color: #000;     /* Optional: background to show behind transparent parts */
+  }
+}
